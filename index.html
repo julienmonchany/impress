@@ -8,23 +8,44 @@
     
     <meta name="author" content="Julien Monchany" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-    
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<!--
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+	-->
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" />
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body class="impress-not-supported">
 
 <div id="impress">
     <div id="Titre" class="step">
-        <img style="max-height: 500px" src="img/test.png" alt="Atos" />
-        <p>Alternance de blabla</p>
+		<img class="logo fade" src="img/atos_logo.png" />
+		<div class="toggle-1">
+			<h2>L'interfaceur Novae</h2>
+			<hr />
+		</div>
+        <div class="toggle-2">
+			<p>Julien Monchany</p>
+			<small>M2 Miage - 2013</small>
+		</div>
     </div>
-    <div class="step" data-x="1000">
-        <p>Sommaire</p>
+	
+    <div id="Sommaire" class="step" data-x="2000" data-y="800" data-z="1500">
+        <h1>Sommaire</h1>
+		<ol>
+			<li>Introduction</li>
+			<li>Le projet Novae</li>
+			<li>L'interfaceur</li>
+		</ol>
     </div>
 
+	<div class="step" data-x="4000" data-y="200">
+        <h1>Introduction</h1>
+    </div>
 
 
     <!--<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
