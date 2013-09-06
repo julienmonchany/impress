@@ -4,8 +4,14 @@
     Author     : Julien
     Description:
         Purpose of the stylesheet follows.
+		
+		
+	Color Sheet:
+	#2B79A1 - Light blue used for <ol> elements
 */
 
+
+/* Base CSS */
 h1{
     font-size: 2.8em;
 	font-family: 'Droid Serif', serif;
@@ -15,21 +21,73 @@ h2{
     font-size: 1.6em; 
 }
 
-img{
+
+
+small{
+	font-size:60%;
+}
+
+/* List styles */
+ol{
+	list-style-type:decimal;
+	font: italic 1.1em;
+	color: #2B79A1;
+	margin: 25px 0 0 100px;
+}
+
+li {
+	margin-bottom:25px;
+}
+
+ol p{
+	margin:0 0 0 12px;
+	font-size: .9em;
+	color: #000000;
+}
+
+/* Slide Specific Rules */
+#Titre{
+	text-align:center;
+}
+
+#Titre .logo{
+	margin-bottom:80px;
+}
+
+#Titre img{
 	margin: 0 auto;
 	display:block;
 	max-width:750px;
 }
 
-.logo{
-	margin-bottom:80px;
-}
+/* MICS & EFFECTS */
 
-#Titre{
-	text-align:center;
-}
+/* 1. Fade Effect */
+	.future .fadeInSlow { opacity: 0; }
+	.future .fadeInNormal { opacity: 0; }
+	.future .fadeInFast { opacity: 0; }
 
-small{
-	font-size:60%;
-}
+
+	.present .fadeInSlow{
+		opacity: 1;
+		transition: opacity 1.8s ease-in-out;
+		-moz-transition: opacity 1.8s ease-in-out;
+		-webkit-transition: opacity 1.8s ease-in-out;
+	}
+
+	.present .fadeInNormal{
+		opacity: 1;
+		transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out;
+	}
+
+	.present .fadeInFast{
+		opacity: 1;
+		transition: opacity .5s ease-in-out;
+		-moz-transition: opacity .5s ease-in-out;
+		-webkit-transition: opacity .5s ease-in-out;
+	}
+
+
 
