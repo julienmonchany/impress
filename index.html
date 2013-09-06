@@ -1,60 +1,83 @@
 <!doctype html>
-
 <html lang="fr">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <title>Présentation d'alternance de Julien Monchany</title>
-    
-    <meta name="author" content="Julien Monchany" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-	<!--
-		<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
-	-->
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="favicon.png" />
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/main.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1028" />
+        <title>Présentation d'alternance de Julien Monchany</title>
 
-<body class="impress-not-supported">
+        <meta name="author" content="Julien Monchany" />
+        <!--
+        
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+        
+        <!--
+                <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+        -->
+        
+        <!-- offline fonts -->
+        <link href="css/font_import.css" rel="stylesheet" />
+        
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/graph.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="img/favicon.png" />
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
 
-<div id="impress">
-    <div id="Titre" class="step">
-		<img class="logo fadeInSlow" src="img/atos_logo.png" />
-		<div class="toggle-1">
-			<h2>L'interfaceur Novae</h2>
-			<hr />
-		</div>
-        <div class="toggle-2">
-			<p>Julien Monchany</p>
-			<small>M2 Miage - 2013</small>
-		</div>
-    </div>
-	
-    <div id="Sommaire" class="step" data-x="2000" data-y="800" data-z="1500">
-        <h1>Sommaire</h1>
-		<ol>
-			<li class="fadeInFast"><p >Introduction</p></li>
-			<li class="fadeInNormal"><p>Le projet Novae</p></li>
-			<li class="fadeInSlow"><p>L'interfaceur</p></li>
-		</ol>
-    </div>
+    <body class="impress-not-supported">
 
-<!-- 	<div class="step" data-x="4000" data-y="200">
-        <h1>Introduction</h1>
-    </div> -->
+        <div id="impress">
+            <div id="Titre" class="step">
+                <img class="logo fadeInSlow" src="http://i.imgur.com/F4RmGGL.png" />
+                <div class="toggle-1">
+                    <h2>L'interfaceur Novae</h2>
+                    <hr />
+                </div>
+                <div class="toggle-2">
+                    <p>Julien Monchany</p>
+                    <small>M2 Miage - 2013</small>
+                </div>
+            </div>
 
+            <div id="Sommaire" class="step" data-x="2000" data-y="800" data-z="1500">
+                <h1>Sommaire</h1>
+                <ol>
+                    <li class="fadeInFast"><p >Introduction</p></li>
+                    <li class="fadeInNormal"><p>Le projet Novae</p></li>
+                    <li class="fadeInSlow"><p>L'interfaceur</p></li>
+                </ol>
+            </div>
 
-    <!--<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>-->
+            <div id="Volumetrie" class="step" data-x="4000" data-y="200">
+                <h1>Volumétrie</h1>
+                <p>Données traitées par l'interfaceur</p>
+                <ul id="graph" class="fadeInFast">
+                    <li class="graph-bar"><p>1000</p><div class="b1 slideFast"></div><p>Jan.</p></li>
+                    <li class="graph-bar"><div class="b2 slideFast"></div><p>Fév.</p></li>
+                    <li class="graph-bar"><div class="b3 slideFast"></div><p>Mars</p></li>
+                    <li class="graph-bar"><div class="b4 slideFast"></div><p>Avr.</p></li>
+                    <li class="graph-bar"><div class="b5 slideFast"></div><p>Mai</p></li>
+                    <li class="graph-bar"><div class="b6 slideFast"></div><p>Juin</p></li>
+                    <li class="graph-bar"><div class="b7 slideFast"></div><p>Jui.</p></li>
+                    <li class="graph-bar"><div class="b8 slideFast"></div><p>Aou.</p></li>
+                    <li class="graph-bar"><div class="b9 slideFast"></div><p>Sep.</p></li>
+                    <li class="graph-bar"><div class="b10 slideFast"></div><p>Oct.</p></li>
+                    <li class="graph-bar"><div class="b11 slideFast"></div><p>Nov.</p></li>
+                    <li class="graph-bar"><div class="b12 slideFast"></div><p>Déc.</p></li>
+                      
+                    <li class="graph-bar2"><div class="plop"></div></li>
+                </ul>
+            </div>
 
-</div>
+            <!-- overview at the end of the prez
+            <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>-->
 
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+        </div>
 
-</body>
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+
+    </body>
 </html>

@@ -1,93 +1,161 @@
 /* 
-    Document   : main
-    Created on : 4 sept. 2013, 20:11:13
-    Author     : Julien
-    Description:
-        Purpose of the stylesheet follows.
-		
-		
-	Color Sheet:
-	#2B79A1 - Light blue used for <ol> elements
-*/
+/*    Created on : 4 sept. 2013, 20:11:13
+/*    Author     : julien.monchany@gmail.com (@KValium)
+/*    Description:
+/*          Overwrite of the default stylesheets
+/*		
+/***********************************************/
+/*	Color Sheet:
+/*          #2B79A1 - Light blue
+/*          #0C304A - Dark blue
+/*
+/***********************************************/
+/* Base CSS
+/***********************************************/
 
-
-/* Base CSS */
 h1{
     font-size: 2.8em;
-	font-family: 'Droid Serif', serif;
+    font-family: 'Droid Serif', serif;
 }
 
 h2{
     font-size: 1.6em; 
 }
 
-
-
 small{
-	font-size:60%;
+    font-size:60%;
 }
 
-/* List styles */
+/***********************************************/
+/* List styles
+/***********************************************/
+
 ol{
-	list-style-type:decimal;
-	font: italic 1.1em;
-	color: #2B79A1;
-	margin: 25px 0 0 100px;
+    list-style-type:decimal;
+    font: italic 1.1em;
+    color: #2B79A1;
+    margin: 25px 0 0 100px;
 }
 
 li {
-	margin-bottom:25px;
+    margin-bottom:25px;
 }
 
 ol p{
-	margin:0 0 0 12px;
-	font-size: .9em;
-	color: #000000;
+    margin:0 0 0 12px;
+    font-size: .9em;
+    color: #000000;
 }
 
-/* Slide Specific Rules */
+/***********************************************/
+/* Slide Specific Rules 
+/***********************************************/
 #Titre{
-	text-align:center;
+    text-align:center;
 }
 
 #Titre .logo{
-	margin-bottom:80px;
+    margin-bottom:80px;
 }
 
 #Titre img{
-	margin: 0 auto;
-	display:block;
-	max-width:750px;
+    margin: 0 auto;
+    display:block;
+    max-width:750px;
 }
 
-/* MICS & EFFECTS */
+#Volumetrie{
+    text-align: center;
+}
+
+/***********************************************/
+/* MICS & EFFECTS 
+/***********************************************/
 
 /* 1. Fade Effect */
-	.future .fadeInSlow { opacity: 0; }
-	.future .fadeInNormal { opacity: 0; }
-	.future .fadeInFast { opacity: 0; }
+    .future .fadeInSlow { opacity: 0; }
+    .future .fadeInNormal { opacity: 0; }
+    .future .fadeInFast { opacity: 0; }
 
 
-	.present .fadeInSlow{
-		opacity: 1;
-		transition: opacity 1.8s ease-in-out;
-		-moz-transition: opacity 1.8s ease-in-out;
-		-webkit-transition: opacity 1.8s ease-in-out;
-	}
+    .present .fadeInSlow{
+        opacity: 1;
+        transition: opacity 1.8s ease-in-out;
+        -moz-transition: opacity 1.8s ease-in-out;
+        -webkit-transition: opacity 1.8s ease-in-out;
+    }
 
-	.present .fadeInNormal{
-		opacity: 1;
-		transition: opacity 1s ease-in-out;
-		-moz-transition: opacity 1s ease-in-out;
-		-webkit-transition: opacity 1s ease-in-out;
-	}
+    .present .fadeInNormal{
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+    }
 
-	.present .fadeInFast{
-		opacity: 1;
-		transition: opacity .5s ease-in-out;
-		-moz-transition: opacity .5s ease-in-out;
-		-webkit-transition: opacity .5s ease-in-out;
-	}
+    .present .fadeInFast{
+        opacity: 1;
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+    }
+
+
+        
+ /* 2. Slide */
+
+    .future .slideFast{height:0;}
+    .future .slideNormal{height:0;}
+
+    .present .slideFast{
+        transition: height  2s ease-in-out;
+        -moz-transition: height  2s ease-in-out;
+        -webkit-transition: height  2s ease-in-out;
+    }
+
+    .present .slideNormal{
+        transition: height  2s ease-in-out;
+        -moz-transition: height  2s ease-in-out;
+        -webkit-transition: height  2s ease-in-out;
+    }
 
 
 
+/***********************************************/
+/* Graph des données de l'interfaceur
+/***********************************************/
+#graph{
+font-size: .4em;
+}
+
+.graph-bar{
+    text-align: center;
+    width: 7%;
+    vertical-align:bottom;
+    margin-left:2px;
+    display:inline-block;
+}
+
+.b1 { background-color:#0C304A; height: 100px; }
+.b2 { background-color:#2B79A1; height: 70px; }
+.b3 { background-color:#2B79A1; height: 20px; }
+.b4 { background-color:#2B79A1; height: 50px; }
+.b5 { background-color:#2B79A1; height: 35px; }
+.b6 { background-color:#2B79A1; height: 80px; }
+.b7 { background-color:#2B79A1; height: 10px; }
+.b8 { background-color:#2B79A1; height: 34px; }
+.b9 { background-color:#2B79A1; height: 78px; }
+.b10{ background-color:#2B79A1; height: 5px; }
+.b11{ background-color:#2B79A1; height: 45px; }
+.b12{ background-color:#2B79A1; height: 60px; }
+
+
+
+.graph-bar2{
+    width: 0px;
+    vertical-align:bottom;
+    display:inline-block;
+}
+
+.plop{
+    height:200px;
+}
